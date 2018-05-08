@@ -4,7 +4,7 @@ Simple shell script for creating local and remote repository via API.
 ## How to use
 From the directory where your projects are run this:  
 
-```./create newProjectName -flag```  
+```./create.sh newProjectName -flag```  
 
 Where:  
 
