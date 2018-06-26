@@ -5,7 +5,7 @@ BB_PASSWORD=bb_password
 GH_USER='gh_username'
 GH_PASSWORD='gh_password'
 
-if [ $1 ]
+if [ $1 ] && [ ! -d $1 ];
 	then
 		mkdir $1 && cd $1
 		if [ $2 ]
@@ -29,5 +29,5 @@ if [ $1 ]
 				esac
 		fi
 	else
-		echo No parameters are given!
+		echo --- The project name hasn\'t been passed or such project already exists! ---
 fi
